@@ -1,0 +1,79 @@
+@import url('https://fonts.google.com/specimen/Work+Sans');
+html {
+    margin: 0;
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden; /* bloque le scroll vertical */
+    font-family: 'Work Sans', sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh; /* hauteur pleine fenêtre */
+    width: 100vw; /* largeur pleine fenêtre */
+}
+.top {
+    height: 70%; /* un tiers */
+    background-image: url('./assets/images/background-pattern-desktop.svg');
+    background-position: center;
+    object-fit: contain;
+    background-size: cover;
+}
+.bottom {
+    height: 100%;
+    background-color: hsl(275, 100%, 97%);
+}
+.contentbox {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;     /* Ne dépasse jamais la largeur du parent */
+    max-height: 100vh;   /* Ne dépasse pas la hauteur de l'écran */
+    border-radius: 10px;
+    padding: 0 20px 20px 20px;
+    width: 280px;
+    height: auto;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3) ;
+}
+.titre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    font-weight: 700;
+}
+.soustitre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 600;
+    font-size: 9.5px;
+}
+.description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 8px;
+    font-weight: 400;
+    color: grey;
+    line-height: 15px;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+.imagetext{
+    margin-left: auto;
+}
+

@@ -76,4 +76,8 @@ img {
 .imagetext{
     margin-left: auto;
 }
+.soustitre:hover {
+    color: hsl(292, 16%, 49%);
+    
+}
 

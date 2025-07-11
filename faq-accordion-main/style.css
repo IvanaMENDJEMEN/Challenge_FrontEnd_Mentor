@@ -1,4 +1,4 @@
-@import url('https://fonts.google.com/specimen/Work+Sans');
+@import url(assets/fonts/static/WorkSans-Regular.ttf);
 html {
     margin: 0;
     height: 100%;
@@ -62,7 +62,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 8px;
+    font-size: 10px;
     font-weight: 400;
     color: grey;
     line-height: 15px;
@@ -76,8 +76,23 @@ img {
 .imagetext{
     margin-left: auto;
 }
-.soustitre:hover {
+.choix:hover {
     color: hsl(292, 16%, 49%);
+    background-color: #f1f2f3;
+    box-shadow: 0 4px 4px 8px rgba(243, 240, 240, 0.3) ;
     
+}
+.reponse {
+  background-color: #f9f9f9;
+  padding: 12px 20px;
+  border-left: 4px solid #007BFF;
+  font-style: italic;
+  margin-bottom: 10px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 

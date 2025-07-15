@@ -59,7 +59,7 @@ body {
     font-size: 9.5px;
 }
 .description {
-    display: flex;
+    display: none;
     flex-direction: row;
     align-items: center;
     font-size: 10px;
@@ -76,12 +76,12 @@ img {
 .imagetext{
     margin-left: auto;
 }
-.choix:hover {
+/* .choix:hover {
     color: hsl(292, 16%, 49%);
     background-color: #f1f2f3;
     box-shadow: 0 4px 4px 8px rgba(243, 240, 240, 0.3) ;
     
-}
+} */
 .reponse {
   background-color: #f9f9f9;
   padding: 12px 20px;
